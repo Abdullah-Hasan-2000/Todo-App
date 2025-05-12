@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    
-    
+    <div class="container mt-5">
+        <div style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 26px;">
+            <h1>Todo Application</h1>
+        </div>
+        <div style="text-align: center;" class="input-group mb-3">
+            <input type="text" id="todoInput" class="form-control" placeholder="Enter your todo">
+            <div class="input-group-append">
+                <button class="btn btn-primary" onclick="addTodo()">Add Items</button>
+                <button class="btn btn-danger" onclick="deleteAllTodos()">Delete all Items</button>
+            </div>
+        </div>
+        <div>
+            <ul id="items_data" class="list-group"></ul>
+        </div>
+    </div>
 </body>
+<script src="app1.js"></script>
 </html>
